@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    text-transform: uppercase;
+    background-color: purple;
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* General Styles */
+header {
+    text-align: center;
+    background-color: #800080; /* Adjust color to match the theme */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap properly */
+    justify-content: center;
+    gap: 10px; /* Adds spacing between items */
+}
+
+li {
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #d100d1; /* Adjust to match button colors */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: inline-block;
+    white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Responsive Behavior */
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #800080; /* Background for dropdown */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Store Sections */
+.store-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.store-section img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.store-info {
+    max-width: 400px;
+}
+
+.store-info h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.store-info p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff00dd;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #e44e4e;
+}
+
+/*LONESTAR CHOCOLATES */
+.chocolates-container {
+    max-width: 600px; /* Limits the width for better readability */
+    margin: 0 auto; /* Centers the content */
+    text-align: center; /* Centers the text */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Adjust as needed */
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff00ff; /* Add an underline for section separation */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    line-height: 1.8;
+    background: rgba(255, 0, 255, 0.2); /* Light pinkish background */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.chocolates, .explorer {
+    color: #ffffff;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
